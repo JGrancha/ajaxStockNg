@@ -61,7 +61,7 @@ angular.module('myApp.services', [])
                     page_number = parseInt(page_number);
                     total_pages = parseInt(total_pages);
                     neighborhood = parseInt(neighborhood);
-                    var link = '#/' + objeto + '/';
+                    var link = '#/' + objeto + '/list/';
                     var vector = "<div class=\"pagination\"><ul>";
                     if (page_number > 1)
                         vector += ("<li><a class=\"pagination_link\" id=\"" + (page_number - 1) + "\" href=\"" + link + (page_number - 1) + "/" + nrpp + "\">prev</a></li>");
@@ -88,7 +88,7 @@ angular.module('myApp.services', [])
                     return vector;
                 },
                 getNrppBar: function(objeto, page_number, nrpp) {
-                    var link = '#/' + objeto + '/';
+                    var link = '#/' + objeto + '/list/';
                     var vector = "<div class=\"pagination\"><ul>";
                     if (nrpp == 5)
                         vector += "<li class=\"active\" >";

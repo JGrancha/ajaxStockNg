@@ -15,8 +15,11 @@ angular.module('myApp', [
     'ngSanitize' //http://stackoverflow.com/questions/9381926/insert-html-into-view-using-angularjs
 ])
         .config(['$routeProvider', function($routeProvider) {
-                $routeProvider.when('/clientes/:numpage/:numrpp', {templateUrl: 'partials/clientes.jsp', controller: 'controlClientesList'});
+                $routeProvider.when('/cliente/list/:numpage/:numrpp', {templateUrl: 'partials/clientes.jsp', controller: 'controlClientesList'});
                 $routeProvider.when('/cliente/view/:id', {templateUrl: 'partials/clienteview.jsp', controller: 'controlClienteView'});
+                
+                
+                
                 
                 $routeProvider.when('/productos/:numpage/:numrpp', {templateUrl: 'partials/productos.jsp', controller: 'controlProductosList'});
                 $routeProvider.when('/producto/view/:id', {templateUrl: 'partials/productoview.jsp', controller: 'controlProductoView'});

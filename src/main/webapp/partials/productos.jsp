@@ -64,12 +64,13 @@
             </tr>
         </thead>
         <tbody>
-            <tr ng-repeat="cli in productos">
-                <td>{{cli.id}}</td>
-                <td>{{cli.codigo}}</td>
-                <td>{{cli.descripcion}}</td>
-                <td>{{cli.precio}}</td>
-                <td>{{cli.id_tipoproducto}}</td>
+            <tr ng-repeat="pro in productos">
+                <td>{{pro.id}}</td>
+                <td>{{pro.codigo}}</td>
+                <td>{{pro.descripcion}}</td>
+                <td>{{pro.precio}}</td>
+                <td>{{pro.id_tipoproducto}}</td>
+                
                 <td>
                     <div class="btn-toolbar">
                         <div class="btn-group">

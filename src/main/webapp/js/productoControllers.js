@@ -37,6 +37,8 @@ moduloProducto.controller('controlProductosList', function($scope, $routeParams,
 
     });
 
+
+
     $scope.fieldNames = serverService.getFieldNames('producto').then(function(datos6) {
         $scope.fieldNames = datos6['data'];
         $scope.selectedFilterFieldName = null;

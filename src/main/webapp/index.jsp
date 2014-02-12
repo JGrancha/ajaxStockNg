@@ -47,7 +47,7 @@
                 
                 <div class="span12">  
                     <ul class="menu">
-                        <li><a href="#clientes/1/10">clientes</a></li>
+                        <li><a href="#cliente/list/1/10">clientes</a></li>
                         <li><a href="#productos/1/10">productos</a></li>
                         <li><a href="#view2">view2</a></li>
                     </ul> 

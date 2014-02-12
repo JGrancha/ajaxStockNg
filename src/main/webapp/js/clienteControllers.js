@@ -10,7 +10,7 @@ moduloCliente.controller('controlClientesList', function($scope, $routeParams, s
 
     $scope.numPagina = $routeParams.numpage;
     $scope.nrpp = $routeParams.numrpp;
-    $scope.botoneraNrpp = serverService.getNrppBar('clientes', $scope.numPagina, $scope.nrpp);
+    $scope.botoneraNrpp = serverService.getNrppBar('cliente', $scope.numPagina, $scope.nrpp);
 
     $scope.pages = serverService.getPages('cliente', $scope.nrpp, null, null, null, null, null, null).then(function(datos5) {
         $scope.pages = datos5['data'];
@@ -25,7 +25,7 @@ moduloCliente.controller('controlClientesList', function($scope, $routeParams, s
 
     $scope.$on('myApp.construirBotoneraPaginas', function() {
 
-        $scope.botoneraPaginas = serverService.getPaginationBar('clientes', $scope.numPagina, $scope.pages, 2, $scope.nrpp);
+        $scope.botoneraPaginas = serverService.getPaginationBar('cliente', $scope.numPagina, $scope.pages, 2, $scope.nrpp);
     })
 
     $scope.prettyFieldNames = serverService.getPrettyFieldNames('cliente').then(function(datos4) {
