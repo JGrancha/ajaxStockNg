@@ -18,7 +18,7 @@ angular.module('myApp', [
                 $routeProvider.when('/cliente/list/:numpage/:numrpp', {templateUrl: 'partials/clientes.jsp', controller: 'controlClientesList'});
                 $routeProvider.when('/cliente/view/:id', {templateUrl: 'partials/clienteview.jsp', controller: 'controlClienteView'});
                 
-                
+                //claves ajenas: usar un módulo compartido para apuntarse la url de llamada: http://stackoverflow.com/questions/12008908/how-can-i-pass-variables-between-controllers-in-angularjs
                 
                 
                 $routeProvider.when('/productos/:numpage/:numrpp', {templateUrl: 'partials/productos.jsp', controller: 'controlProductosList'});
